@@ -1,0 +1,32 @@
+The easiest way to test DroidCouch is to create a new Eclipse project and run the test client
+
+If you don't already have Eclipse and the latest Android SDK, please install them. 
+See http://developer.android.com/sdk/installing.html for details. 
+
+You also need a CouchDB server that you can access via HTTP. It can be either remote or local. 
+See http://couchdb.apache.org/ for details on how to install CouchDB.
+
+Installation:
+
+1. Use menu alternative File -> New project -> Other -> Android project -> Specify from existing source. 
+2. Browse to the directory you checked out from GitHub and select it. 
+3. Use default values for everything
+
+Note: if you intend to run on a real phone, please specify a compatible SDK version. 
+Currently we default to SDK 1.5, which works for most phones currently on the market.
+
+4. Change the file TestClient.java 
+
+Find the line: //String HOST = "ADD_YOUR_OWN_COUCHDB_SERVER_HERE";
+and add a valid URL to your own server. Note that the URL should end with a forward slash. 
+
+5. Try running the project using "Debug as -> Android project"
+
+If everything works, you will see the test application in the emulator. 
+After a few seconds, it should then display: All tests passed!
+
+Good luck!
+
+
+
+
